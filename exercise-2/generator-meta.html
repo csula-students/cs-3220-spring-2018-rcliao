@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incremental game framework - game information</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="width-constraint">
+    <header>
+        <h1>Incremental game framework</h1>
+        <nav class="main-nav">
+            <a href="game-info.html">Game Information</a>
+            |
+            <a class="active" href="generator-meta.html">Generators</a>
+            |
+            <a href="event-meta.html">Events</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row-container">
+            <form class="fill card" action="">
+                <div class="form-group">
+                    <label for="name">Generator Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Generator Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rate">Generator rate</label>
+                    <input type="number" id="rate">
+                </div>
+                <div class="form-group">
+                    <label for="cost">Base cost</label>
+                    <input type="number" id="cost">
+                </div>
+                <div class="form-group">
+                    <label for="unlock_at">Unlock At</label>
+                    <input type="number" id="unlock_at">
+                </div>
+
+                <div class="actions">
+                    <button>Save</button>
+                </div>
+            </form>
+
+            <div>
+                <table class="info-table table-with-elipsis">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Rate</th>
+                            <th>Cost</th>
+                            <th>Unlock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grandma</td>
+                            <td class="align-right">5</td>
+                            <td class="align-right">10</td>
+                            <td class="align-right">5</td>
+                        </tr>
+                        <tr>
+                            <td>Factory</td>
+                            <td class="align-right">10</td>
+                            <td class="align-right">50</td>
+                            <td class="align-right">50</td>
+                        </tr>
+                        <tr>
+                            <td>Mine</td>
+                            <td class="align-right">20</td>
+                            <td class="align-right">200</td>
+                            <td class="align-right">200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
