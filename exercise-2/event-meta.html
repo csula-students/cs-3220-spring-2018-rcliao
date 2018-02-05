@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incremental game framework - game information</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="width-constraint">
+    <header>
+        <h1>Incremental game framework</h1>
+        <nav class="main-nav">
+            <a href="game-info.html">Game Information</a>
+            |
+            <a href="generator-meta.html">Generators</a>
+            |
+            <a class="active" href="event-meta.html">Events</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row-container">
+            <form class="fill card" action="">
+                <div class="form-group">
+                    <label for="name">Event Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Event Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="trigger_at">Trigger at</label>
+                    <input type="number" id="trigger_at">
+                </div>
+
+                <div class="actions">
+                    <button>Save</button>
+                </div>
+            </form>
+
+            <div>
+                <table class="info-table table-with-elipsis">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Trigger Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grandma shows up</td>
+                            <td>Adipisicing iusto minus consequatur obcaecati molestias earum placeat! Dolorum sapiente optio nobis dolor non, ducimus Enim quae beatae fuga natus hic nesciunt? At animi ex maiores modi vitae similique! Laborum?</td>
+                            <td class="align-right">10</td>
+                        </tr>
+                        <tr>
+                            <td>You can construct factory now!</td>
+                            <td>Adipisicing iusto minus consequatur obcaecati molestias earum placeat! Dolorum sapiente optio nobis dolor non, ducimus Enim quae beatae fuga natus hic nesciunt? At animi ex maiores modi vitae similique! Laborum?</td>
+                            <td class="align-right">50</td>
+                        </tr>
+                        <tr>
+                            <td>We've found cookies in deep mountain … in the mine?</td>
+                            <td>Adipisicing iusto minus consequatur obcaecati molestias earum placeat! Dolorum sapiente optio nobis dolor non, ducimus Enim quae beatae fuga natus hic nesciunt? At animi ex maiores modi vitae similique! Laborum?</td>
+                            <td class="align-right">500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
