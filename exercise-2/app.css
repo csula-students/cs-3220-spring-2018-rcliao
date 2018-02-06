@@ -1,12 +1,57 @@
+/**
+ * Typography from Sakula.css at https://github.com/oxalorg/sakura
+ */
+html {
+    font-size: 62.5%; /* reset back to 10px */
+    font-family: Avenir Next,Helvetica,Arial,Sans-Serif;
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.618;
+    max-width: 38em;
+    margin: auto;
+    color: #4a4a4a;
+    background-color: #f9f9f9;
+    padding: 1.3rem;
+}
+
+@media (max-width: 684px) {
+    body {
+        font-size: 1.53rem;
+    }
+}
+@media (max-width: 382px) {
+    body {
+        font-size: 1.35rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 html,
 body,
 button,
 input,
-label,
 textarea {
     box-sizing: border-box;
-    font-size: 16px;
-    font-family: Avenir Next,Helvetica,Arial,Sans-Serif;
+}
+button,
+input,
+textarea {
+    font-size: 1em;
 }
 
 .width-constraint {
@@ -60,13 +105,14 @@ button:active {
  */
 .row-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .row-container .fill {
     flex: 1;
 }
 
 .card {
-    max-width: 30em;
+    width: 30em;
     background-color: #fff;
     padding: 1em;
     border-radius: 3px;
